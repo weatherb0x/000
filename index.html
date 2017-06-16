@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src='Libs/processing.js'>
+</script>
+<script>
+    window.onresize = function(){
+      Processing.getInstanceById('sketch').size(document.body.offsetWidth,document.body.offsetHeight)
+    }
+</script>
+<style>
+body { background-color:rgba(15,15,15,1); }
+
+@font-face {
+  font-family: "rgb";
+  src: url("Media/Fonts/rgb-Regular.otf"); }
+
+html * {
+  font-family: "rgb"; }
+
+</style>
+</head>
+<body style='background-size:300vw auto;background-position:center;background-image:url("audio_data.gif");overflow:hidden;' >
+<div style='display:table;height:100%;width:100%;'>
+  <div style='display:table-cell;vertical-align:middle;width:100%'>
+      <canvas style='background-color:transparent;display:block;margin:auto;max-width:100%;max-height:100%;' id='sketch' data-processing-sources='Sketch/index.pde'></canvas>
+  </div>
+</div>
+
+
+</body>
+</html>
